@@ -1,0 +1,1078 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <title>🚘 Resultado de la cotización</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js'></script>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
+  <link rel="stylesheet" href="./css/loader/style.css">
+
+  <!--================================ ESTOS SON LOS LLAMADOS DE LA VOZ ======================================
+
+    <script src="./js/speak/speakClient.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/main.js"></script>
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=a0f7b471-dead-48ee-977f-bf8b44cb1763"> </script>
+   ================================ CIERRE LLAMADOS DE LA VOZ ======================================-->
+<style>
+
+@media only screen and (max-width: 500px) {
+.descuen {
+    margin-left: 5px !important;
+    margin-top: 40px !important;
+}
+    
+}
+.descuen {
+    background-color: #ffa604;
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+    position: absolute;
+    padding: 10px;
+    margin-left: 155px;
+}
+  .wrap-table100 {
+    max-height: none;
+    height: 100% !important;
+    box-shadow: -8px 10px 25px -7px rgb(220 220 250 / 35%) !important;
+    width: 1100px !important;
+}
+  .row.header:hover {
+    color: #ffffff;
+    background: #557fff;
+}
+      .row:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+      .checked {
+        color: orange;
+      }
+      label{
+         color: #547fff;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      button{
+        background-color: #547fff !important;
+      }
+      .row .cell {
+
+    border-bottom: 6px solid #f8f8fd !important;
+
+}
+      .titulito [data-title] {    
+          position: relative;
+          cursor: help;
+        }
+
+        .titulito [data-title]:hover::before {
+          content: attr(data-title);
+          position: absolute;
+          bottom: 0px;
+          padding: 3px 6px;
+          border-radius: 2px;
+          background: #000;
+          color: #fff;
+          font-size: 12px;
+          font-family: sans-serif;
+          white-space: nowrap;
+          z-index: 100
+        }
+        .titulito [data-title]:hover::after {
+          content: '';
+          position: absolute;
+          bottom: 0px;
+          left: 8px;
+          color: #fff;
+          border: 8px solid transparent;    
+          border-bottom: 8px solid #000;
+          z-index: 100
+        }
+        .titulito span{
+            margin-left: 13px;
+            font-size:20px;
+
+        }
+        .row .cell{
+          width: 250px;
+          white-space: nowrap;
+          text-align: center;
+        }
+        label {
+    color: #547fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #03F081 !important;
+    border-bottom: 6px solid #01A156 !important;
+    border-color: #0aef8100;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #03F081 !important;
+    border-bottom: 3px solid #01A156 !important;
+    border-color: #0aef8100;
+}
+.row .cell {
+    font-family: "Nunito", sans-serif;
+    color: #717171;
+    line-height: 1.2;
+    font-weight: unset !important;
+    padding: 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #f2f2f2;
+    vertical-align: middle;
+}
+.row .cell.titulo {
+    text-align: inherit;
+  }
+  .fa, .far, .fas {
+    font-family: 'FontAwesome';
+}
+.destacado{
+	background-color: #0030a5;
+    color: white;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 2px;
+    width: 50%;
+    text-align: center;
+    margin-top:13px !important;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.destacado1{
+	background-color: #00a155;
+    color: white;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 2px;
+    width: 50%;
+    text-align: center;
+    margin-top:13px !important;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+
+.destacado2{
+	background-color: #ffa604;
+    color: white;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 2px;
+    width: 50%;
+    text-align: center;
+    margin-top:13px !important;
+    font-weight: bold;
+    margin: 0 auto;
+
+}
+.cell.titulo {
+    text-align: center !important;
+}
+.row .cell:nth-child(1) {
+    padding-left: 0px;
+}
+
+</style>
+</head>
+
+ <header>
+  <div style="background-color: #f6f7fb; padding-left: 20px;  padding-right: 20px; padding-top: 15px; padding-bottom:15px; text-align:center">
+   <span><a href="https://chseguros.com.co/seguro-para-carro/"><img src="https://chseguros.com.co/wp-content/uploads/2021/09/nuevologo-1.svg" width="240"></a></span> 
+  </div>
+</header>
+ 
+<body style="background: url('images/resultado.svg') no-repeat left center !important; background-size: 30% !important; ">
+<STYLE>
+           .whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+       </STYLE>
+       	<a href="https://api.whatsapp.com/send?phone=573103731541&text=Hola%20CH%2C%20quisiera%20preguntarte%20algo.%F0%9F%98%80" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+   
+<div style="">
+    <audio autoplay>
+        <source src="saludo.mp3">
+    </audio> 
+</div>
+       
+<!-- <div class="preloader">
+  <div class="preloader__container">
+        <h1 class="preloader__container__percent"></h1>
+    <div class="preloader__container__preload">
+      <div class="preloader__container__preload__dot"> </div>
+      <div class="preloader__container__preload__dot"> </div>
+      <div class="preloader__container__preload__dot"> </div>
+      <div class="preloader__container__preload__dot"> </div>
+    </div>
+  </div>
+</div>  
+ -->
+  <div style="width: 100%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap;  padding: 33px 30px; margin-bottom:-30px">
+   <div class="wrap-table100" style="background-color:white;padding:20px;"> 
+    <center>
+    
+    <p>
+        Hola <strong id="name_client"> </strong> el valor asegurable de tu <strong id="name_vehicule">  </strong> es:
+    <p> 
+    <p style="color: #FFA600; font-weight: 600;" id="valor_asegurable">
+        $1.5000.000
+    <p> 
+    </center>
+   </div>  
+  </div>
+  <div class="limiter">
+    <div class="container-table100">
+      <div class="wrap-table100">
+          <div class="table">
+
+            <div class="row header">
+              <div class="cell">
+                Aseguradora             
+              </div>
+              <div class="cell">
+                Daños a terceros
+              </div>
+              <div class="cell">
+                Perdida total
+              </div>
+              <div class="cell">
+                Perdida parcial
+              </div>
+            <!--  <div class="cell">
+                Coberturas básicas
+              </div>-->
+              <div class="cell">
+                Precio
+              </div>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+  
+  </div>
+    <div>
+      <p style="max-width: 100%; font-size: 12px; text-align: center; margin: 0 auto; padding: 0% 10%;margin-bottom: 2%;">Esta cotización no implica aceptación del riesgo y no genera responsabilidad alguna está sujeta a cambios en el valor de las primas, de las tasas de interés en caso de financiación, a la realización del estudio de aseguralibidad y aprobación por parte de la aseguradora. En caso de expedirse la póliza, las condiciones de esta oferta pueden variar. Esta cotización tiene una vigencia de 5 días calendario a partir del momento de cotización. Cualquier inquietud no dudes en contactarnos en nuestros canales de atención.
+  </p></div>
+  
+
+
+  
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/common_scripts.min.js"></script>
+
+<!--================================ ESTOS SON LOS LLAMADOS DE LA VOZ ======================================-->
+
+
+
+<!--===============================================================================================-->  
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+ <script src="./js/loader/script.js"></script>
+
+  <script>
+
+
+      $( document ).ready(function() {
+        $("#name_client").text(localStorage.getItem('cname'))
+      });
+
+
+
+        var loader = document.getElementsByClassName("animation_home");
+
+      
+        
+
+    //  const apiurl = 'http://localhost/cotizador-api/' // developmentt 
+      const apiurl = 'https://chseguros.com.co/api/cotizador-api/' // production
+
+
+  //   const BASE_URL = 'http://localhost/cotizador/' // development
+      const BASE_URL = 'https://chseguros.com.co/api/cotizador/' // production
+
+        // function loadBMAnimation(loader) {
+        //     var animation = bodymovin.loadAnimation({
+        //         container: loader,
+        //         renderer: "svg",
+        //         loop: true,
+        //         autoplay: true,
+        //         path: "https://assets3.lottiefiles.com/packages/lf20_n7DAEZ.json"
+        //     });
+        // }
+
+        // for (var i = 0; i < loader.length; i++) {
+        //     loadBMAnimation(loader[i]);
+        // }
+
+        // loaded
+
+        document.addEventListener('DOMContentLoaded', async function(){
+
+          let idCrypt = window.location.pathname.split('/').pop()
+        
+          idCrypt = decodeURIComponent(escape(window.atob(idCrypt)));
+          console.log(idCrypt)
+          let results = await fetch(`${apiurl}sura/getJsonCotizacion/${idCrypt.split('-')[1]}`, {
+            method: 'GET', 
+          });
+
+          let table = document.querySelector('.table');
+
+          if(results.status != 200){
+           table.innerHTML = table.innerHTML + createRowEmptyData();
+
+           return;
+          }
+
+          let data = await results.json();
+
+          localStorage.setItem('id_vehiculo_cotizacion', data.id_vehiculo);
+          localStorage.setItem('cname', data.nombre);
+          localStorage.setItem('correo', data.correo);
+          localStorage.setItem('descuento', data.descuento);
+          localStorage.setItem('auto', `${data.marca} ${data.referencia}`);
+          localStorage.setItem('placa', `${data.placa}`);
+          localStorage.setItem('planes', JSON.parse(data.cotizacion_json).planes);
+          
+          localStorage.setItem('bolivar_planes', JSON.parse(data.cotizacion_json).planes_bolivar);
+          localStorage.setItem('liberty_planes', JSON.parse(data.cotizacion_json).planes_liberty);
+          localStorage.setItem('estado_planes', JSON.parse(data.cotizacion_json).estado_planes);
+          localStorage.setItem('estado_planes_jr', JSON.parse(data.cotizacion_json).estado_planes_jr);
+
+
+          localStorage.setItem('ciudad_circulacion', data.ciudad_circulacion);
+
+
+
+
+
+
+          $("#name_vehicule").text(localStorage.getItem('auto'))
+        $("#name_client").text(localStorage.getItem('cname'))
+       // $("#valor_asegurable").text(`$ ${new Intl.NumberFormat().format(JSON.parse(localStorage.getItem('dataFasecoldaEstado')).ValorAsegurado)}`)
+
+      // console.log(, "fasecolda")
+
+      if(JSON.parse(localStorage.getItem('planes'))[0].infoVehiculo){
+        $("#valor_asegurable").text(`$ ${new Intl.NumberFormat().format(JSON.parse(localStorage.getItem('planes'))[0].infoVehiculo.valorAsegurado)}`)
+      }
+      if(JSON.parse(localStorage.getItem('planes'))[1].infoVehiculo){
+        $("#valor_asegurable").text(`$ ${new Intl.NumberFormat().format(JSON.parse(localStorage.getItem('planes'))[1].infoVehiculo.valorAsegurado)}`)
+      }
+      if(JSON.parse(localStorage.getItem('planes'))[2].infoVehiculo){
+        $("#valor_asegurable").text(`$ ${new Intl.NumberFormat().format(JSON.parse(localStorage.getItem('planes'))[2].infoVehiculo.valorAsegurado)}`)
+      }
+      if(JSON.parse(localStorage.getItem('planes'))[3].infoVehiculo){
+        $("#valor_asegurable").text(`$ ${new Intl.NumberFormat().format(JSON.parse(localStorage.getItem('planes'))[3].infoVehiculo.valorAsegurado)}`)
+      }
+
+      if(JSON.parse(localStorage.getItem('planes'))[4].infoVehiculo){
+        $("#valor_asegurable").text(`$ ${new Intl.NumberFormat().format(JSON.parse(localStorage.getItem('planes'))[4].infoVehiculo.valorAsegurado)}`)
+      }
+
+
+      if(!JSON.parse(localStorage.getItem('planes'))[0].infoVehiculo){
+
+        if(JSON.parse(localStorage.getItem('dataFasecoldaEstado'))){
+          $("#valor_asegurable").text(`$ ${new Intl.NumberFormat().format(JSON.parse(localStorage.getItem('dataFasecoldaEstado')).ValorAsegurado)}`)
+        }else{
+          $("#valor_asegurable").text(``)
+        }
+        
+      }
+       
+
+
+       
+
+          if(sessionStorage.speaker){
+
+            setTimeout(() => saludo(), 7000)
+
+           } 
+
+          let errorSura = false;
+          let errorBolivar = false;
+          let errorLiberty = false;
+          let erroEstado = false;
+          // planes de Sura
+           
+
+
+          try{
+
+            if(localStorage.getItem('estado_planes') == null)
+                throw "Error"
+              
+              let planesEstado = JSON.parse(localStorage.getItem('estado_planes'));
+
+            
+              // MapPlanesEstados = MapPlanesEstado(planesEstado.Attributes[0]);
+              // let newRow = createRow(MapPlanesEstados, 'estado', 0);
+              // table.innerHTML = table.innerHTML + newRow
+
+              planesEstado.Attributes[2].Nombre = "Plan Estado Premium"
+              MapPlanesEstados = MapPlanesEstado(planesEstado.Attributes[2]);
+              newRow = createRow(MapPlanesEstados, 'estado', 2);
+              table.innerHTML = table.innerHTML + newRow
+
+
+
+              let planesEstadoJr = JSON.parse(localStorage.getItem('estado_planes_jr'));
+
+              planesEstadoJr.Attributes[2].Nombre = "Plan Estado Junior"
+              MapPlanesEstadosJr = MapPlanesEstado(planesEstadoJr.Attributes[2]);
+              let newRow2 = createRow(MapPlanesEstadosJr, 'estadoJr', 2);
+              table.innerHTML = table.innerHTML + newRow2
+
+
+
+
+
+
+              
+            }catch(error){
+              console.info("No hay planes de Estado", error)
+              erroEstado = !erroEstado;
+            } 
+
+
+
+         try{
+            if(localStorage.getItem('planes') == null)
+                      throw "Error";
+
+              let planes = JSON.parse(localStorage.getItem('planes'));
+
+                  let setPlanes = planes.filter(item => Object.values(item).length > 5);
+
+              if(setPlanes.length == 0)
+                  throw "Error";
+              
+
+              planes.forEach((plan, key) => {
+                    if(Object.values(plan).length < 5)
+                        return
+                  
+                plan.valoresPerdidas = findPerdidasCoberturas(plan);
+                plan.coberturasbasicas = findCoberturasBasicas(plan);
+
+                if(plan.planSeleccionado.codigoPlan != "52"){
+                  let newRow = createRow(plan, 'Sura', key);
+                  table.innerHTML = table.innerHTML + newRow
+                }
+                
+
+              })
+
+            
+
+          }
+          catch(error){
+            console.info("No hay planes de Sura", error)
+            errorSura = !errorSura;
+          }
+          
+          try{
+            if(localStorage.getItem('bolivar_planes') == null)
+                throw "Error"
+
+
+              let planesBolivar = JSON.parse(localStorage.getItem('bolivar_planes'));
+
+              planesBolivar.forEach((planBolivar, key) => {
+                
+                planBolivar = mapPlanBolivar(planBolivar);
+
+                let newRow = createRow(planBolivar, 'bolivar', key);
+
+                table.innerHTML = table.innerHTML + newRow
+
+              })
+
+          }
+          catch(error){
+            console.info("No hay planes de Bolivar", error)
+            errorBolivar = !errorBolivar;
+          }   
+
+          try{
+
+            if(localStorage.getItem('liberty_planes') == null)
+                throw "Error"
+              
+              let planesLiberty = JSON.parse(localStorage.getItem('liberty_planes'));
+
+              if(planesLiberty.amparo == null)
+                throw "Error";
+
+              MapPlanLiberty = mapPlanLiberty(planesLiberty);
+    
+              let newRow = createRow(MapPlanLiberty, 'liberty', 0);
+
+              table.innerHTML = table.innerHTML + newRow
+              
+          }catch(error){
+            console.info("No hay planes de Liberty", error)
+            errorLiberty = !errorLiberty;
+          }   
+
+
+
+
+          
+
+
+
+
+                 
+          if(errorSura && errorBolivar && errorLiberty && erroEstado)
+           table.innerHTML = table.innerHTML + createRowEmptyData();
+          
+        })
+/*
+        function saludo() {
+            var cname = localStorage.getItem('cname');
+
+            var saludo = `Hola ${cname},,,, hemos encontrado ${document.querySelector('.table').childElementCount - 1} resultados ,,,, si te interesa alguno haz clic en el boton VER MÁS,,,,`;
+            
+            speaks(saludo);
+
+            sessionStorage.removeItem("speaker");
+
+            $("#name_client").text(localStorage.getItem('cname'))
+
+
+        }
+
+        function speaks(txt) {
+
+            if ('speechSynthesis' in window) {
+                const s = new SpeechSynthesisUtterance();
+                s.volume = 10;
+                s.lang = 'es-ES';
+                s.text = txt;
+               // msg.textContent = txt;
+                window.speechSynthesis.speak(s);
+            } 
+        }
+*/
+        function mapPlanBolivar(plan){
+          planNew = {};
+
+          planNew.planSeleccionado = {
+            nombrePlan: `Plan Bolivar ${plan.opcionAutosDescripcion}`,
+          }
+
+
+          if(plan.opcionAutosDescripcion == "PREMIUM"){
+            planNew.valoresPerdidas = {
+              danosterceros: "Hasta $4.000 millones",
+              perdidatotal: "100% Del valor asegurado",
+              perdidaparcial: "800 Mil Valor unitario",
+            }
+          }
+
+
+          if(plan.opcionAutosDescripcion == "STANDARD"){
+            planNew.valoresPerdidas = {
+              danosterceros: "Hasta $2.200 millones",
+              perdidatotal: "90% del valor asegurado",
+              perdidaparcial: "975 Mil Valor unitario",
+            }
+          }
+
+
+          if(plan.opcionAutosDescripcion == "CLASICA"){
+            planNew.valoresPerdidas = {
+              danosterceros: "Hasta $1.500 millones",
+              perdidatotal: "90% del valor asegurado",
+              perdidaparcial: "1 millón 200 Mil Valor unitario",
+            }
+          }
+
+
+
+
+
+          
+
+          planNew.coberturasbasicas = {
+              perdidaLlaves: '',
+              asistenciaViaje: plan.coberturasCotizacion.find(cob => cob.descripcion == 'Valor Asistencia') == undefined? '' : 'checked' ,
+              asistenciaJuridica: '',
+              vehiculoReemplazo: '',
+            }
+
+          planNew.tarifa = {
+              primaTotal: plan.totalPrima
+            }
+
+          return planNew;
+        }
+
+
+        function mapPlanLiberty(plan){
+          planNew = {};
+
+          planNew.planSeleccionado = {
+            nombrePlan: `Plan Liberty Individual`,
+          }
+  
+         // plan.tdeducible = plan.tdeducible == '' || plan.tdeducible == null  ? '0' : plan.tdeducible;
+        //  plan.capital    = plan.capital    == '' || plan.capital    == null  ? '0' : plan.capital;
+          planNew.valoresPerdidas =  LibertyGetPerdidaCase(plan);
+          planNew.valoresPerdidas.danosterceros = 'No Cubre'
+   
+         /*
+          planNew.valoresPerdidas = {
+            danosterceros  : 'No Cubre',
+            perdidatotal   : ,
+            perdidaparcial : `$ ${new Intl.NumberFormat().format(parseFloat(plan.tdeducible.replace('$','')))}`,
+          }*/
+          planNew.coberturasbasicas = {
+            perdidaLlaves      : LibertyGetLlavesCase(plan).length      > 0 ? 'checked' : '',
+            asistenciaViaje    : LibertyGetViajeCase(plan).length       > 0 ? 'checked' : '',
+            asistenciaJuridica : LibertyGetJuridicaCase(plan).length    > 0 ? 'checked' : '',
+            vehiculoReemplazo  : LibertyGetVehiculoSCase(plan).length   > 0 ? 'checked' : '',
+          }
+
+          planNew.tarifa = {
+              primaTotal: plan.datosEconomicos.total
+          }
+
+          return planNew;
+        }
+
+
+
+
+
+        function MapPlanesEstado(plan){
+
+          planNew = {};
+
+          planNew.planSeleccionado = {
+            nombrePlan: `${plan.Nombre}`,
+          }
+          
+
+          
+          console.log(plan)
+
+
+
+         // plan.tdeducible = plan.tdeducible == '' || plan.tdeducible == null  ? '0' : plan.tdeducible;
+        //  plan.capital    = plan.capital    == '' || plan.capital    == null  ? '0' : plan.capital;
+         // planNew.valoresPerdidas =  LibertyGetPerdidaCase(plan);
+         // planNew.valoresPerdidas.danosterceros = 'No Cubre'
+   
+          
+         if(plan.Nombre == "InsurancePremium"){
+            planNew.valoresPerdidas = {
+              danosterceros  : 'Hasta $1.200 millones',
+              perdidatotal   : 'Deducible 10%',
+              perdidaparcial : 'Deducible 10% mín. 1 SMMLV',
+            }
+         }
+
+
+         if(plan.Nombre == "Plan Estado Premium"){
+            planNew.valoresPerdidas = {
+              danosterceros  : 'Hasta $3.000 millones',
+              perdidatotal   : 'Sin deducible',
+              perdidaparcial : 'Deducible 10% mín. 1 SMMLV',
+            }
+         }
+
+
+
+         if(plan.Nombre == "Plan Estado Junior"){
+            planNew.valoresPerdidas = {
+              danosterceros  : 'Hasta $900 millones',
+              perdidatotal   : 'Sin deducible',
+              perdidaparcial : 'Deducible 10% mín. 1 SMMLV',
+            }
+         }
+
+          
+
+
+
+          planNew.coberturasbasicas = {
+            perdidaLlaves      : '',
+            asistenciaViaje    : 'checked',
+            asistenciaJuridica : 'checked',
+            vehiculoReemplazo  : 'checked',
+          }
+
+          planNew.tarifa = {
+              primaTotal: plan.Valor
+          }
+
+          return planNew;
+        }
+
+
+
+
+
+
+        function LibertyGetPerdidaCase(plan){
+          /*Perdida total*/
+          var perdidatotal = [plan.amparo.find( (fil) => {
+              if( str_norm(fil.nombre).toLowerCase().includes('perdida total'))
+                return fil
+          })].map(item => `$ ${new Intl.NumberFormat().format(item.capital)}` //' '+item.tdeducible
+          ).join(' <br> ')
+     
+          /*Perdida parcial*/
+          var perdidaparcial = [plan.amparo.find( (fil) => {
+              if( str_norm(fil.nombre).toLowerCase().includes('perdida parcial'))
+                return fil
+          })].map(item => `$ ${new Intl.NumberFormat().format(item.capital)}` //+' '+item.tdeducible
+          ).join(' <br> ')
+
+          return {perdidatotal,perdidaparcial}
+        }
+
+        function LibertyGetLlavesCase(plan){
+          /*Perdida llaves*/
+          var perdida_llaves = plan.amparo.filter( (fil) => {
+              if( str_norm(fil.nombre).toLowerCase().includes('perdida de llaves') || str_norm(fil.nombre).toLowerCase().includes('perdida de llave') )
+                return fil
+          });
+          return perdida_llaves;
+        }
+
+        function LibertyGetViajeCase(plan){
+          /*Perdida llaves*/
+          var asistencia_viaje = plan.amparo.filter( (fil) => {
+              if( str_norm(fil.nombre).toLowerCase().includes('asistencia de viaje') || str_norm(fil.nombre).toLowerCase().includes('asistencia viaje') )
+                return fil
+          });
+          return asistencia_viaje;
+        }
+
+        function LibertyGetJuridicaCase(plan){
+          /*Perdida llaves*/
+          var juridica_asistencia = plan.amparo.filter( (fil) => {
+              if( str_norm(fil.nombre).toLowerCase().includes('asistencia jurídica') || str_norm(fil.nombre).toLowerCase().includes('asistencia jurídica') )
+                return fil
+          });
+          return juridica_asistencia;
+        }
+
+        function LibertyGetVehiculoSCase(plan){
+          /*Perdida llaves*/
+          var juridica_asistencia = plan.amparo.filter( (fil) => {
+              if( str_norm(fil.nombre).toLowerCase().includes('vehículo sustituto') )
+                return fil
+          });
+          return juridica_asistencia;
+        }
+
+        function createRow(plan, aseguradora, key) {
+
+
+          let labelPlan = ""
+
+
+          if(plan.planSeleccionado.nombrePlan == "Plan Autos Básico"){
+            labelPlan = " <p class='destacado'>Más económico (RCE)</p>"
+          }
+
+          if(plan.planSeleccionado.nombrePlan == "Plan Bolivar PREMIUM"){
+            labelPlan = " <p class='destacado1'>Mayor cobertura</p>"
+          }
+
+          if(plan.planSeleccionado.nombrePlan == "Plan Autos Clásico"){
+          	labelPlan = " <p class=''></p>"
+          }
+          if(plan.planSeleccionado.nombrePlan == "Plan Utilitarios y Pesados"){
+          	labelPlan = " <p class=''></p>"
+          }
+          if(plan.planSeleccionado.nombrePlan == "Plan Bolivar STANDARD"){
+          	labelPlan = " <p class=''></p>"
+          }
+          if(plan.planSeleccionado.nombrePlan == "Plan Bolivar CLASICA"){
+          	labelPlan = " <p class=''></p>"
+          }
+          if(plan.planSeleccionado.nombrePlan == "Plan Liberty Individual"){
+          	labelPlan = " <p class=''></p>"
+          }
+          if(plan.planSeleccionado.nombrePlan == "Plan Estado Junior"){
+          	labelPlan = " <p class='destacado2'>Con descuento</p>"
+          }
+          if(plan.planSeleccionado.nombrePlan == "Plan Estado Premium"){
+          labelPlan = " <p class='destacado2'>Con descuento</p>"
+          }
+
+          
+
+         // console.log(plan.planSeleccionado, "PLANEEE")
+         // return false
+          var imgs = aseguradora == 'bolivar' ? 'images/logo-bolivar.svg' : 
+                     aseguradora  == 'liberty' ? 'images/logo-liberty.svg' : 
+                     aseguradora  == 'estado' ? 'images/logo-estado.svg' : 
+                     aseguradora  == 'estadoJr' ? 'images/logo-estado.svg' : 
+                    'images/logo-sura.svg';
+
+          console.log(aseguradora)
+          console.log(localStorage.getItem('descuento'))
+
+
+          let precio_antes = ""
+          let discount     = ""
+          let precio       = number_format(plan.tarifa.primaTotal, 0)
+
+          let color = "#557fff"
+          if((aseguradora == "estado") || (aseguradora == "estadoJr") && (localStorage.getItem('descuento') == "No") && (localStorage.getItem('ciudad_circulacion') == "Medellin - Antioquia")){
+
+
+            const descuento = (plan.tarifa.primaTotal / 100) * 20
+
+            console.log(descuento, "DESCUENTO")
+
+            if(parseFloat(plan.tarifa.primaTotal - descuento) > 1000000){
+              
+
+              precio_antes = `<p style="text-decoration: line-through;color: #557fff; font-size: 13px; margin-bottom: auto; font-weight: 900;">Antes: $ ${precio}</p>`
+              discount     = ` <div class="descuen">
+                                <p>20%</p>
+                                <p>Dcto</p>
+                                </div>`
+
+              color = "#ffa604"
+
+              precio = number_format(plan.tarifa.primaTotal - descuento, 0) 
+
+            }                              
+            
+
+          }
+
+          //precio = precio.split(".")
+
+
+
+          return `
+        <div class="row">
+          <div class="cell titulo" data-title="Aseguradora">
+             <img style="" src="${imgs}" alt="" width="120" height="50">
+            
+            <BR>
+             ${labelPlan}
+            
+             <label style="margin-top:8%">${plan.planSeleccionado.nombrePlan}</label>  
+              
+          </div>
+          <div class="cell" data-title="Daños a terceros">
+            ${plan.valoresPerdidas.danosterceros}
+          </div>
+          <div class="cell" data-title="Perdida total">
+            ${plan.valoresPerdidas.perdidatotal}
+            
+          </div>
+          <div class="cell" data-title="Perdida parcial">
+            ${plan.valoresPerdidas.perdidaparcial}
+
+          </div>
+          
+     
+            
+          <div class="cell" data-title="Precio">
+            ${discount}
+            <P style="color: #737373; font-size:14px; margin-bottom:5px !important;">
+              Pagarías al año:  
+            </P>
+            ${precio_antes}
+             <P style="color: ${color}; font-size: 23px; margin-bottom: auto; font-weight: 900;">
+              $ ${precio}
+            </P>
+             <button class="btn btn-primary  btn-block" type="submit" onclick="viewDetail('${aseguradora}', '${key}')">Ver más</button>
+          </div>
+        </div>
+          `;
+        }
+
+
+
+
+        function number_format(amount, decimals) {   
+          amount += ''; // por si pasan un numero en vez de un string
+          amount = parseFloat(amount.replace(/[^-0-9\.]/g, ''));
+          // elimino cualquier cosa que no sea numero o punto 
+          decimals = decimals || 0; // por si la variable no fue fue pasada  
+          // si no es un numero o es igual a cero retorno el mismo cero 
+          if (isNaN(amount) || amount === 0)      
+              return parseFloat(0).toFixed(decimals);     
+              // si es mayor o menor que cero retorno el valor formateado como numero   
+              amount = '' + amount.toFixed(decimals);   
+              var amount_parts = amount.split('.'),    
+              regexp = /(\d+)(\d{3})/;       
+              while (regexp.test(amount_parts[0]))  
+              amount_parts[0] = amount_parts[0].replace(regexp, '$1' + ',' + '$2'); 
+              return amount_parts.join('.');  
+        }
+
+
+
+        function findCoberturasBasicas(plan){
+          let vehiculoReemplazo = '',
+            perdidaLlaves = '',
+            asistenciaJuridica = '',
+            asistenciaViaje = '';
+
+          plan.grupoCoberturas.forEach(grp => {
+
+            if(grp.coberturas.length == 0)
+              return;
+
+            grp.coberturas.forEach(g => {
+
+              if(g.dsCobertura == 'Asistencia en Viaje')
+                asistenciaViaje = 'checked';
+
+              if(g.dsCobertura == 'Pérdida de Llaves')
+                perdidaLlaves = 'checked';
+
+              if(g.dsCobertura == 'Veh�culo de Reemplazo')
+                vehiculoReemplazo = 'checked';
+
+              if(g.dsCobertura == 'Asistencia Juridica')
+                asistenciaJuridica = 'checked';
+              
+            })
+
+          })
+
+          return { vehiculoReemplazo, perdidaLlaves, asistenciaJuridica, asistenciaViaje }
+        }
+
+        function findPerdidasCoberturas(plan){
+
+          let danosterceros = 'Hasta 3.040 millones ', 
+            perdidatotal = 'No cubre', 
+            perdidaparcial = 'No cubre';
+
+            console.log(plan.planSeleccionado.codigoPlan)
+
+           if(plan.planSeleccionado.codigoPlan == 1){
+              danosterceros = "Hasta $640 millones"
+           }
+
+
+           if(plan.planSeleccionado.codigoPlan == 2){
+              danosterceros = "Hasta $2.040 millones"
+              perdidatotal = '100% del valor asegurado'
+              perdidaparcial = 'Deducible de $1.218.000'
+           }
+
+
+           if(plan.planSeleccionado.codigoPlan == 3){
+              danosterceros = "Hasta 3.040 millones"
+              perdidatotal = '100% del valor asegurado'
+              perdidaparcial = 'Deducible de $1.218.000 '
+           }
+
+
+
+          return { danosterceros, perdidatotal, perdidaparcial }
+        }
+
+        function createRowEmptyData(){
+          return `
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell">  
+            Sin datos encontrados
+          </div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+          `;
+        }
+
+        // Hasta 1200 millones
+        // 90% del valor asegurado
+        // 10% / 1 SMMLV
+        // 10 cuotas de: $434.000
+        // De contado: $1.434.000
+
+        function viewDetail(aseguradora, key){
+
+          let plan;
+
+          // if(aseguradora == 'bolivar'){
+          //    plan = JSON.parse(localStorage.getItem('bolivar_planes'))[key]
+          //    localStorage.setItem('plan_detalle_bolivar', JSON.stringify(plan));
+          // }
+          // else{
+          //    plan = JSON.parse(localStorage.getItem('planes'))[key];
+          //    localStorage.setItem('plan_detalle', JSON.stringify(plan));
+          // }
+
+          window.location.href = BASE_URL + 'detalle/' + window.location.pathname.split('/').pop() + '?aseguradora='+aseguradora+'&plan='+key
+        }
+        
+    </script>
+
+</body>
+</html>		
